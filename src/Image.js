@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-// import CheckButton from './CheckButton.js';
+import CheckButton from './CheckButton.js';
 
 class Image extends Component {
     constructor (props) {
@@ -17,7 +17,7 @@ class Image extends Component {
         return {
             display: "inline",
             padding: ".2em .6em .3em",
-            fontSize: "175%",
+            fontSize: "75%",
             fontWeight: "600",
             lineHeight: "1",
             color: "rgb(0,255,0)",
@@ -119,20 +119,20 @@ class Image extends Component {
         };
     }
 
-    // renderCheckButton () {
-    //     return (
-    //             <CheckButton key="Select"
-    //         index={this.props.index}
-    //         color={"rgba(255, 255, 255, 0.7)"}
-    //         selectedColor={"#4285f4"}
-    //         hoverColor={"rgba(255, 255, 255, 1)"}
-    //         isSelected={this.props.item.isSelected}
-    //         isSelectable={this.props.isSelectable}
-    //         onClick={this.props.isSelectable ?
-    //                  this.props.onSelectImage : null}
-    //         parentHover={this.state.hover}/>
-    //     );
-    // }
+    renderCheckButton () {
+        return (
+                <CheckButton key="Select"
+            index={this.props.index}
+            color={"rgba(255, 255, 255, 0.7)"}
+            selectedColor={"#4285f4"}
+            hoverColor={"rgba(255, 255, 255, 1)"}
+            isSelected={this.props.item.isSelected}
+            isSelectable={this.props.isSelectable}
+            onClick={this.props.isSelectable ?
+                     this.props.onSelectImage : null}
+            parentHover={this.state.hover}/>
+        );
+    }
 
     render () {
         var alt = this.props.item.alt ? this.props.item.alt : "";
@@ -192,7 +192,7 @@ class Image extends Component {
                 position: "absolute",
                 height: "36px",
                 width: "100%"}}>
-                {/* {this.renderCheckButton()} */}
+                {this.renderCheckButton()}
                 </div>
 
                 <div className="tile-bottom-bar"
