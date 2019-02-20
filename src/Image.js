@@ -165,7 +165,7 @@ class Image extends Component {
             key: "img-"+this.props.index,
             src: this.props.item.thumbnail,
             alt: alt,
-            title: this.props.item.caption,
+            title: this.props.item.caption + "Testing Brain Cradle",
             style: this.thumbnailStyle(),
         };
 
