@@ -144,7 +144,7 @@ class Image extends Component {
                             cursor: 'pointer',
                             pointerEvents: 'visible',
                             margin: "2px"}}>
-                        <span style={this.tagStyle(tag.color)}>{tag.value}</span>
+                        <span style={this.tagStyle(tag.color)}>{"tag.value"}</span>
                         </div>;
                 });
 
