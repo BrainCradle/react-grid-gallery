@@ -11,7 +11,7 @@ class Image extends Component {
         };
     }
 
-    tagStyle () {
+    tagStyle (colorValue) { // should be rgb value
         if (this.props.tagStyle)
             return this.props.tagStyle;
         return {
@@ -20,7 +20,7 @@ class Image extends Component {
             fontSize: "75%",
             fontWeight: "600",
             lineHeight: "1",
-            color: "yellow",
+            color: {colorValue},
             background: "rgba(0,0,0,0.65)",
             textAlign: "center",
             whiteSpace: "nowrap",
@@ -144,7 +144,7 @@ class Image extends Component {
                             cursor: 'pointer',
                             pointerEvents: 'visible',
                             margin: "2px"}}>
-                        <span style={this.tagStyle()}>{tag.value}</span>
+                        <span style={this.tagStyle(tag.color)}>{tag.value}</span>
                         </div>;
                 });
 
