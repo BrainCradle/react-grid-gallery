@@ -17,7 +17,7 @@ class Image extends Component {
         return {
             display: "inline",
             padding: ".2em .6em .3em",
-            fontSize: "75%",
+            fontSize: "175%",
             fontWeight: "600",
             lineHeight: "1",
             color: "rgb(0,255,0)",
