@@ -20,7 +20,7 @@ class Image extends Component {
             fontSize: "75%",
             fontWeight: "600",
             lineHeight: "1",
-            color: {colorValue},
+            color: "rgb(0,255,0)",
             background: "rgba(0,0,0,0.65)",
             textAlign: "center",
             whiteSpace: "nowrap",
