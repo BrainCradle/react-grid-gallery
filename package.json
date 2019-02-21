@@ -1,7 +1,7 @@
 {
-  "name": "react-grid-gallery",
-  "version": "0.5.3",
-  "description": "Justified gallery component for React.",
+  "name": "brain-cradle-react-grid-gallery",
+  "version": "0.0.1",
+  "description": "An extension of react-gird-gallery that supports custom label colors.",
   "main": "lib/Gallery.js",
   "dependencies": {
     "react-images": "^0.5.16",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/benhowell/react-grid-gallery.git"
+    "url": "https://github.com/BrainCradle/react-grid-gallery.git"
   },
   "keywords": [
     "react",
@@ -50,10 +50,10 @@
     "image gallery",
     "photo gallery"
   ],
-  "author": "Ben Howell",
+  "author": "Ben Howell, Devon Luongo, Kripanshu Bhargava",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benhowell/react-grid-gallery/issues"
+    "url": "https://github.com/BrainCradle/react-grid-gallery/issues"
   },
-  "homepage": "https://benhowell.github.io/react-grid-gallery/"
+  "homepage": "https://github.com/BrainCradle/react-grid-gallery"
 }
