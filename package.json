@@ -58,5 +58,5 @@
   "homepage": "https://github.com/BrainCradle/react-grid-gallery",
   "scripts": {
     "prepublish": "yarn run lint && yarn run test && yarn run build"
-  },
+  }
 }
