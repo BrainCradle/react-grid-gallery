@@ -2,7 +2,7 @@
   "name": "brain-cradle-react-grid-gallery",
   "version": "0.0.1",
   "description": "An extension of react-gird-gallery that supports custom label colors.",
-  "main": "lib/Gallery.js",
+  "main": "src/Gallery.js",
   "dependencies": {
     "react-images": "^0.5.16",
     "prop-types": "^15.5.8"
