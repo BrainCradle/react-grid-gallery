@@ -55,5 +55,8 @@
   "bugs": {
     "url": "https://github.com/BrainCradle/react-grid-gallery/issues"
   },
-  "homepage": "https://github.com/BrainCradle/react-grid-gallery"
+  "homepage": "https://github.com/BrainCradle/react-grid-gallery",
+  "scripts": {
+    "prepublish": "yarn run lint && yarn run test && yarn run build"
+  },
 }
