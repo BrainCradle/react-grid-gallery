@@ -16,16 +16,16 @@ class Image extends Component {
             return this.props.tagStyle;
         return {
             display: "inline",
-            padding: ".2em .6em .3em",
-            fontSize: "75%",
-            fontWeight: "600",
-            lineHeight: "1",
-            color: "rgb(0,255,0)",
-            background: "rgba(0,0,0,0.65)",
-            textAlign: "center",
-            whiteSpace: "nowrap",
-            verticalAlign: "baseline",
-            borderRadius: ".25em"
+				padding: ".2em .6em .3em",
+				fontSize: "75%",
+				fontWeight: "900",
+				lineHeight: "1",
+				color: colorValue,
+				background: "rgb(255, 255, 255, 0.50)",
+				textAlign: "center",
+				whiteSpace: "nowrap",
+				verticalAlign: "baseline",
+				borderRadius: ".25em"
         };
     }
 
@@ -144,7 +144,7 @@ class Image extends Component {
                             cursor: 'pointer',
                             pointerEvents: 'visible',
                             margin: "2px"}}>
-                        <span style={this.tagStyle(tag.color)}>{"tag.value"}</span>
+                        <span style={this.tagStyle(tag.color !== 'undefined'?tag.color : 'rgb(0,0,0,1.0)')}>{tag.value}</span>
                         </div>;
                 });
 
